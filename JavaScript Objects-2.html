@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment Objects-2</title>
+</head>
+<body>
+    <script>
+class animal {
+    constructor(name, age) {
+    this.name = name; 
+    this.age = age; 
+    }
+
+speak() {
+    console.log(`Listen up, ${this.name}!`);
+}
+};
+
+class Dog extends animal {
+    constructor(breed) {
+        super(breed); 
+    }
+
+
+speak() {
+    console.log(`${this.name}, speak!`); 
+}
+}
+
+const doggie = new Dog("Estefan");
+
+doggie.speak();
+
+    </script>
+</body>
+</html>

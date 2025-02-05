@@ -1,0 +1,180 @@
+/* let my = (x) => x+1; 
+
+ console.log(my(2)); //
+
+
+let num = 10 + 2; 
+
+if (num > 2 && num < 20) {
+        console.log("TRUE"); 
+} else {
+        console.log("FALSE"); 
+} */ 
+
+/*let user = 'employee'; 
+
+if (user === 'guest') {
+        console.log("Login Denied");
+} else if (user === 'employee') {
+        console.log("Successfully Logged in")
+
+}; */
+
+/*let myName = 'Isaias'; 
+
+let nameLength = myName.length; 
+
+if (nameLength > 5) {
+        console.log('More than 5 letters')
+} else if (nameLength === 5) {
+       console.log('Exactly 5 letters'); 
+}else if (nameLength < 5) {
+        console.log('Less than 5 letters')
+}; */
+
+/*var person = 'You'; 
+
+switch(person) {
+        case 'Me':
+                console.log('Gigachad');
+                break;
+        case 'him':
+                console.log('NGMI');
+                break; 
+        case 'You':
+                console.log('GAY');
+                break;
+        default:
+                console.log('You aight');
+} 
+var num = 1200; 
+
+if (num > 10) {
+        console.log("The value of num is greater than 10")
+} else if (num <= 10) { 
+        console.log("The vaule of the number is less than or equal to 10")
+}
+
+
+var num = 1200; 
+
+switch(num) {
+        case 1:
+                console.log("The value of num is 1");
+                break;
+        case 2:
+                console.log('The value of num is 2');
+                break;
+        case 3:
+                console.log("The value of num is 3");
+                break;
+        default:
+                console.log("The value of num is not 1,2 or 3");
+} */
+/*
+                let x = 10;
+                let y = 12;
+                let z = x >= y ? 11: 15;
+                console.log(z); */
+/*
+let a = 100;
+if(a === '100'){
+    console.log("equal");
+} else {
+    console.log("not equal");
+}
+
+let x = 10;
+if(x !== '10') {
+   console.log("not equal");
+} else {
+   console.log("equal");
+}
+
+
+let x = 3;
+let y = 5;
+if (x > y) {
+   console.log("x is greater than y");
+} else {
+   console.log("y is greater than x");
+}
+
+
+let a = 10;
+if(a < 10 && a > 1) {
+    console.log("apple");
+} else if(a <= 1) {
+    console.log("banana");
+} else {
+    console.log("peach");
+}
+
+let x = '5';
+switch(x) {
+     case 5:
+         console.log("yes");
+         break;
+     default:
+         console.log("no");
+         break;
+// } 
+let x = 5;
+if (x < 3 || x > 7) {
+     console.log("x is not between 3 and 7");
+} else {
+     console.log("x is between 3 and 7");
+} 
+
+loop syntax, variablecounter, then argument then description of the count) 
+for(let i = 1; i <= 100; i++) {
+        console.log(i); 
+} 
+        for(let i = 1; i <= 10; i++) {
+                console.log(i)
+        }
+
+        for(let i = 1; <= ; i++) {
+                console.log(i)
+        }
+
+let i = 2;
+
+while(i <= 10) {
+        console.log(i);
+        i++;
+} 
+
+let i = 1;
+
+do {
+    console.log(i);
+    i++;
+ } while (i <= 10);
+ 
+ for(let i = 1; i <= 10; i++) {
+        if(i === 5) {
+                continue;
+        }
+        console.log(i);
+ }
+
+ for(let i = 2; i <= 10; i++) {
+       if(i === 8) {
+        break; 
+       } else {
+        console.log(i);
+       }
+ }
+*/
+const array1 = ["Mike" , "Jake" , "Joe"];
+const array2 = ["Peter" , "Cleaveland" , "Quagmire"]; 
+
+for(let i = 0; i < array1.length; i++) {
+        console.log(array1[i]); 
+} for(let j = 0; j < array2.length; j++) {
+        console.log(array2[j]);
+}
+
+
+

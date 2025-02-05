@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Iterators Assignment 2</title>
+</head>
+<body>
+    <script>
+        
+   let person1 = {
+property1: "Ricky Spanish",
+property2: 45,
+};
+
+let iterator = person[Symbol.iterator];
+let current = iterator.next();
+while(!current.done) {
+    console.log(current.value);
+    current = iterator.next();
+} 
+
+    let person2 = {
+    property1: "Cleavland Brown",
+    property2: 42,
+};
+
+let arrayPersons = [person1, person2];
+console.log(arrayPersons);
+
+for(const person1 of arrayPersons) {
+    console.log(person1); 
+}; 
+
+
+
+
+    </script>
+</body>
+</html>
