@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importing CSS</title>
+    <!-- using a link tag is the primary recommended way to include CSS in an HTML file. We connect an external .css file to the html file. -->
+     <link rel="stlyesheet" href="./style.css">
+</head>
+<body>
+    <style>/*allows me to put CSS directly in HTML file, not wrong fundamentally but not recommended because the concerns of content (HTML) and styling (CSS) could be mixed and messy*/
+
+    </style>
+    <p style="color: brown">This paragraph uses inline styling which is least recommended to apply styling. It goes farthest to mix together the purposes of html/CSS to a point where they are almost indiscernable from one another, and its the hardest to maintain.</p>
+<!--JavaScript is introduced to the html page via a script tage -->
+<script>console.log("This JavaScript runs from the file itself.");
+
+</script>
+<script src="./script.js"></script>
+</body>
+</html>

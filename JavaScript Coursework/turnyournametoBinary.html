@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input Practice</title>
+</head>
+<style>
+    header {
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+    }
+</style>
+<header>Welcome to the User Input Practice Site</header>
+<body>
+    <div>
+    <p>Turn your name into binary.</p>
+    <form id="nameConverterForm">
+        <label for="firstName">First Name: </label><br>
+        <input type = "text" id="firstName"><br>
+        <lable for="lastName">Last Name: </label><br>
+            <input type = "text" id = "lastName"><br>
+            <br>
+        <input type = "submit" value="Convert Name"><input type="reset">
+    </div>
+    <div id="binaryName"></div>
+    </form>
+    <script>  
+        document.getElementById("nameConverterForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            let firstName = document.getElementById("firstName").value;
+            let lastName = document.getElementById("lastName").value;
+            let output = (convertToBinary(firstName) + " " + convertToBinary(lastName));
+            document.getElementById("binaryName").innerHTML = output;
+        })
+        
+        // This will iterate through any word provided and return the binary version of that word
+        function convertToBinary(str) {
+            let word = str.split("");
+            let convertedWord = [];
+            for(i = 0; i < word.length; i++) {
+            let converted = word[i].charCodeAt(word[i]);
+            convertedWord.push(converted.toString(2).padStart(8, 0));
+            };
+            return convertedWord.join(" ");
+            console.log(convertedWord.join(" "));
+        }
+    </script>
+</body>
+</html>

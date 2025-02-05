@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>This is a div.</div>
+    <div id="my Id">This is an if of myId.</div>
+    <p>This is a standalone paragraph</p>
+    <div class="myClass">
+        <p>This is a div of a class with myClass</p>
+        <p>This is another p with a div of myDiv</p>
+    </div>
+    <a href="https://google.com">Google</a>
+    <style>
+        /* `this is a CSS comment for CSS`-Simple CSS Selctors*/
+        div { /* element selector - selects all div tags or divs*/
+            color: blue; /* changes text color to blue*/ 
+    
+        }
+         #myId { /* Id selector - selects all Id attributes of "myId"*/
+            padding: 8px; /* adds 8 pixels of padding (spacing to an element*/ 
+        }
+        .myClass { /* Class selector - selects all class elements with a class attrribute of "myClass" MOST PREVALENT*/
+            background-color: chartreuse; /* adds 8 pixels of padding (spacing to an element*/ 
+        } 
+/* combining CSS selectors */
+p.center { /*multi requirements - applies to all selectors, overrides all other commands for selectors - not that useful*/
+    text-align: center;
+    color: red;
+
+}
+* {
+    background-color: antiquewhite; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    /* universal selector but has the lowest priority for application in the program targets all p tages with class "center"*/
+}
+/* comma allows multiple selectors for manipulation of same properties, called grouping selectors */ 
+#myId, .myClass {
+    font-weight: bold;
+
+}
+/* descendant combinator, looks for all <p> elements inside of parent elements, using the space between selectors makes this into all "all p elements that are in this parent div*/
+div p {
+    letter-spacing:3px;
+}
+/*child combinator - selects all elements that are children of a specific element with the > symbol, sim to descendent combinator but only if the div element is a direct parent of the p element*/
+div > p {
+    font-style:italic;
+}
+
+/*pseudo selectors define a specific state or event, in this example, hovering with the cursor causes a steelblue color effect*/ 
+div:hover {
+    background-color: steelblue;
+
+}
+a:visited {
+    color: brown;
+
+}
+    </style>
+</body>
+</html>
