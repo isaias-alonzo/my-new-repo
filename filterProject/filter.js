@@ -65,3 +65,53 @@ const displayProducts = (filterProducts) => {
     ).join("")
 }
 displayProducts(data)
+// add event listener to search products via user search input
+
+searchInput.addEventListener("keyup", (e)=>{
+  const value = e.target.value.toLowerCase();
+
+  if(value){
+
+    displayProducts(data.filter(item => item.name.toLocaleLowerCase().indexOf(value) !== -1))
+  }else{
+    displayProducts(data)
+  }
+})
+
+//display categories as clickable span tags
+
+//function to display all categories 
+
+const setCategories = () => {
+
+  const allCats = data.map(item => item.cat)
+  const categories = [
+    "All",
+    ...allCats.filter((item, i) =>{
+      return allCats.indexOf(item) === i;
+    })
+    
+  ]
+  categoriesContainer.innerHTML = categories.map(cat=>
+    `
+    <span class='cat'>${cat}</span>
+    `
+  ).join('')
+  //event listener for category filtering
+  //text content below refers to ${cat} above, thats our info
+  categoriesContainer.addEventListener("click", (e)=>{
+    const selectedCat = e.target.textContent;
+    if(selectedCat === 'All'){
+      displayProducts(data)
+    }else{
+      //filter products based on the selected categories
+      displayProducts(data.filter(item =>
+        item.cat === selectedCat
+      ))
+    }
+  })
+
+}
+
+setCategories();
+//spread operator '...' combines arrays
